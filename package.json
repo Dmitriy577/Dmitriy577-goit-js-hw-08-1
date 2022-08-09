@@ -1,0 +1,22 @@
+{
+  "name": "dmitriy577-goit-js-hw-08-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitriy577/Dmitriy577-goit-js-hw-08-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitriy577/Dmitriy577-goit-js-hw-08-1/issues"
+  },
+  "homepage": "https://github.com/Dmitriy577/Dmitriy577-goit-js-hw-08-1#readme",
+  "dependencies": {
+    "simplelightbox": "^2.10.3"
+  }
+}

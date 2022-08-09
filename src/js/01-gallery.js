@@ -21,6 +21,8 @@ const newImg = galereaImg(galleryItems);
 divGallery.insertAdjacentHTML('afterbegin', newImg);
 
 const lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionSelector: 'img',
   captionDelay: 250,
   captionsData: 'alt',
   sourceAttr: 'href',
