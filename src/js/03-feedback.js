@@ -15,13 +15,13 @@ function saveValue(e) {
 localStorageValue();
 
 function localStorageValue() {
-  const proverka = getItemKey(FEEDBACK_FORM_STATE);
-  if (proverka) {
-    if (proverka.email) {
-      form.email.value = proverka.email;
+  const exam = getItemKey(FEEDBACK_FORM_STATE);
+  if (exam) {
+    if (exam.email) {
+      form.email.value = exam.email;
     }
-    if (proverka.message) {
-      form.message.value = proverka.message;
+    if (exam.message) {
+      form.message.value = exam.message;
     }
   }
 }
