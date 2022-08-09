@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/Dmitriy577/Dmitriy577-goit-js-hw-08-1#readme",
   "dependencies": {
     "simplelightbox": "^2.10.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
   }
 }
