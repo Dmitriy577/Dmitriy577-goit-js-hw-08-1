@@ -1,5 +1,6 @@
 import { save, getItemKey, removeKey } from './storage.js';
 import throttle from 'lodash.throttle';
+
 const FEEDBACK_FORM_STATE = 'feedback-form-state';
 let formData = getItemKey(FEEDBACK_FORM_STATE) || {};
 
@@ -12,7 +13,7 @@ function saveValue(e) {
   save(FEEDBACK_FORM_STATE, JSON.stringify(formData));
 }
 
-localStorageValue();
+
 
 function localStorageValue() {
   const exam = getItemKey(FEEDBACK_FORM_STATE);
@@ -25,8 +26,7 @@ function localStorageValue() {
     }
   }
 }
-
-form.addEventListener('submit', handleSubmit);
+localStorageValue();
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -39,6 +39,8 @@ function handleSubmit(e) {
   }
   removeKey(FEEDBACK_FORM_STATE);
   const formData = new FormData(form);
-  const valuesFotm = Object.fromEntries(formData.entries());
+  const valuesForm = Object.fromEntries(formData.entries());
   e.currentTarget.reset();
+  console.log(valuesForm);
 }
+form.addEventListener('submit', handleSubmit);
