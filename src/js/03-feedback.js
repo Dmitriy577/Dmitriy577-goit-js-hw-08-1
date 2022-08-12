@@ -39,7 +39,7 @@ function handleSubmit(e) {
   }
   removeKey(FEEDBACK_FORM_STATE);
   const formData = new FormData(form);
-  const valuesForm = Object.fromEntries(formData.entries());
+  const valuesForm = Object.formEntries(formData.entries());
   e.currentTarget.reset();
   console.log(valuesForm);
 }
